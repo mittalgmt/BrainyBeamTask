@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="post" action="{% url 'quiz' %}">
+        {% csrf_token %}
+        {% for question in questions %}
+            <h3>{{ question.text }}</h3>
+            {% for option in question.options.all %}
+                <input type="checkbox" name="question_{{ question.id }}" value="{{ option.id }}">
+                <label>{{ option.text }}</label><br>
+            {% endfor %}
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

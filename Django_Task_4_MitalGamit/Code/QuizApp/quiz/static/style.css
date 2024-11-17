@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Centering horizontally */
+    align-items: flex-start;  /* Aligning to the top */
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;  /* Adding padding from the top to position the quiz at the top */
+}
+
+/* Centering the form */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;  /* Max width of the form */
+    text-align: left;
+    margin-top: 20px;  /* Position the quiz form slightly away from the top */
+}
+
+/* Heading styling */
+h1 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for each question */
+h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for the checkboxes and options */
+label {
+    font-size: 1em;
+    color: #666;
+    margin-left: 5px;
+    display: inline-block;
+    margin-right: 20px;  /* Spacing between options */
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the results page */
+.results-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;  /* Spacing from the top */
+}
+
+.results-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #45a049;
+}

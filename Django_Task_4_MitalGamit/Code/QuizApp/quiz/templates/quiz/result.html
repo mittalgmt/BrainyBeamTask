@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="results-container">
+        <h1>Quiz Results</h1>
+        <p>Correct Answers: {{ correct }}</p>
+        <p>Wrong Answers: {{ wrong }}</p>
+        <a href="{% url 'quiz' %}">Try Again</a>
+    </div>
+</body>
+</html>
